@@ -5,6 +5,8 @@ from cryptography.hazmat.backends import default_backend
 from binascii import hexlify as hexa
 from os import urandom
 
+print "Running example AES ECB-mode block cipher"
+
 BLOCKLEN = 16
 def blocks(data):
 	split = [hexa(data[i:i+BLOCKLEN]) for i in range(0, len(data), BLOCKLEN)]

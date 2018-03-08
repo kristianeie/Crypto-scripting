@@ -5,6 +5,8 @@ from cryptography.hazmat.backends import default_backend
 from binascii import hexlify as hexa
 from os import urandom
 
+print "Running example AES CBC-mode block cipher"
+
 BLOCKLEN = 16
 # the blocks() function splits data string into space-speparated blocks
 
